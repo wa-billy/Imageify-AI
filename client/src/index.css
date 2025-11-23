@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@plugin "@iconify/tailwind4";
+
 * {
     font-family: Outfit;
 }

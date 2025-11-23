@@ -12,13 +12,14 @@ import profile_img_2 from './profile_img_2.png'
 import step_icon_1 from './step_icon_1.svg'
 import step_icon_2 from './step_icon_2.svg'
 import step_icon_3 from './step_icon_3.svg'
-import email_icon from './email_icon.svg'
-import lock_icon from './lock_icon.svg'
+import email_icon from './mdi-light--email.svg'
+import lock_icon from './mdi-light--lock.svg'
 import cross_icon from './cross_icon.svg'
 import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
 import white from './white.jpg'
+import user_icon from './mdi-light--account.svg'
 
 export const assets = {
     logo,
@@ -36,7 +37,8 @@ export const assets = {
     star_group,
     credit_star,
     profile_icon,
-    white
+    white,
+    user_icon
 }
 
 export const stepsData = [
