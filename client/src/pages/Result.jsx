@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
+import { motion } from 'motion/react'
 
 const Result = () => {
 
@@ -13,7 +14,11 @@ const Result = () => {
   }
 
   return (
-    <form onSubmit={onSubmitHandler} 
+    <motion.form onSubmit={onSubmitHandler} 
+    initial={{ opacity: 0.2, y: 100 }}
+    transition={{ duration: 0.5 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
     className='flex flex-col min-h-[90vh] justify-center items-center'>
       <div>
         <div className='relative'>
@@ -46,7 +51,7 @@ const Result = () => {
       cursor-pointer'>Download</a>
         </div>
       }
-    </form>
+    </motion.form>
   )
 }
 
