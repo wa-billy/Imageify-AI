@@ -8,8 +8,8 @@ export const generateImage = async (req, res) => {
 
         const { userId, prompt } = req.body
         const user = await userModel.findById(userId)
-        if (!user || !prompt) {
-            return req.json({
+        if (!user) {
+            return res.json({
                 success: false,
                 message: `Missing Details!`
             })
@@ -19,7 +19,7 @@ export const generateImage = async (req, res) => {
             return res.json({
                 success: false,
                 message: `No Credits`,
-                creaditBalance: suer.creaditBalance
+                creaditBalance: user.creaditBalance
             })
         }
 
